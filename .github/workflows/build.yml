@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Projekt entpacken
+        run: unzip -o haushaltsbuch-app.zip
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
